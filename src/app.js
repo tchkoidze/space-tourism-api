@@ -23,4 +23,4 @@ app.use("/api", crewRouter);
 app.use("/api", technologyRouter);
 app.use("/", ...swaggerMiddleWare());
 
-app.listen(process.env.PORT | 3333);
+app.listen(process.env.PORT || 3333);
