@@ -5,6 +5,8 @@ info:
   version: 0.1.9
 
 servers:
+- url: https://space-tours.herokuapp.com//api
+    description: production server
   - url: http://localhost:3333/api
     description: local server
 paths:
