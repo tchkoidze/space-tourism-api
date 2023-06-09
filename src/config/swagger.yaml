@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Space-toours
+  description: Devjobs web app API
+  version: 0.1.9
+
+servers:
+  - url: http://localhost:3333/api
+    description: local server
+paths:
+  /destination:
+    get:
+      tags:
+        - destination
+      responses:
+        "200":
+          description: Successfully fetched
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /crew:
+    get:
+      tags:
+        - crew
+      responses:
+        "200":
+          description: Successfully fetched
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /technology:
+    get:
+      tags:
+        - technology
+      responses:
+        "200":
+          description: Successfully fetched
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
