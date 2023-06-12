@@ -15,7 +15,7 @@ connectToMongo();
 app.use(cors());
 app.use("/destination", express.static("./public/assets/destination"));
 app.use("/crew", express.static("./public/assets/crew"));
-app.use("/technology", express.static("./public/assets/technology"));
+app.use("/technology", express.static("public/assets/technology"));
 
 app.use(bodyParser.json());
 
