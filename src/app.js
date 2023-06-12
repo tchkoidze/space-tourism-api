@@ -12,11 +12,12 @@ import swaggerMiddleWare from "../middlewares/swagger-middleware.js";
 const app = express();
 dotenv.config();
 connectToMongo();
+app.use(cors());
 app.use("/destination", express.static("./public/assets/destination"));
 app.use("/crew", express.static("./public/assets/crew"));
+app.use("/technology", express.static("./public/assets/technology"));
 
 app.use(bodyParser.json());
-app.use(cors());
 
 app.use("/api", destinationRouter);
 app.use("/api", crewRouter);
