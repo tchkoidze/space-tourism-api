@@ -5,7 +5,7 @@ info:
   version: 0.1.9
 
 servers:
-  - url: https://space-tours.herokuapp.com/api
+  - url: https://space-tourism-api-u86z.onrender.com/api
     description: production server
   - url: http://localhost:3333/api
     description: local server
